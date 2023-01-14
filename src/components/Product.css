@@ -1,0 +1,98 @@
+.product {
+
+}
+
+.product .img {
+position: relative;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.product .img .buttons {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    transform: translateY(25px);
+    transition: 0.3s;
+    opacity:0;
+}
+
+.product:hover .img .buttons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product .img .buttons button {
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product .img .buttons button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.product .img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product .content {
+    padding:5px  10px;
+}
+
+.product .content :first-child{
+    font-weight: bold;
+    color: black;
+}
+
+.product .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.572);
+    z-index: 3;
+}
+.product .overlay .cover{
+    position: relative;
+}
+
+.product .overlay img {
+    width: 450px;
+}
+.product .overlay .cover .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: none;
+ font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    border-radius: 50%;
+   color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.product .overlay .cover .close .close_icon {
+    color: red;
+    font-size: 2rem;
+}
