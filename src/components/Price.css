@@ -1,0 +1,94 @@
+div.price {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+}
+@media(max-width :800px) {
+    div.price {
+        width: 80%;
+    }
+}
+
+
+.price:nth-child(2) {
+    background-color:rgb(11, 35, 83) ;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.price:nth-child(2)::after {
+    content: 'popular';
+    padding: 3px;
+    width: 80px;
+    color:white;
+    background-color: palevioletred;
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    font-size: 0.7rem;
+    text-align: center;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+}
+
+.price .name {
+    color: gold;
+}
+
+.price:nth-child(3) .name {
+    color: palevioletred;
+}
+
+.price .amount {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+}
+.price .amount::after {
+    content: '$';
+    position: absolute;
+    font-size: 0.6rem;
+    left: -7px;
+}
+
+.price .users {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.price .desc {
+    font-size: 0.7rem;
+    color: white;
+}
+
+.price .button button {
+    border: none;
+   padding: 7px 20px ;
+   border-radius: 50px;
+   cursor: pointer;
+   color: white;
+   text-transform: capitalize;
+   background: linear-gradient(to right,rgb(210, 36, 65) 40%,rgb(255, 85, 0));
+   font-size: 0.7rem;
+}
+
+.price ul li {
+    display: flex;
+    text-align: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+
+.price ul li .title {
+    color: white;
+
+    font-size: 0.7rem;
+}
+
+.price ul li .icon {
+    color: white;
+}

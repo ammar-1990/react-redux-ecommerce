@@ -1,0 +1,48 @@
+.blog {
+position: relative;
+}
+.blog img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.blog .content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height:75% ;
+
+}
+
+.blog .content button {
+    align-self: flex-start;
+    padding:7px 20px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right ,rgb(210, 71, 94), rgb(251, 136, 4));
+    color: white;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.blog .content p:first-of-type {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: auto;
+   
+}
+
+.blog .content p:first-of-type span {
+    color: orangered;
+    font-weight: bold;
+}
+
+.blog .content p:nth-of-type(2) {
+    color: white;
+    margin-top: 15px;
+}
+

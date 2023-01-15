@@ -76,6 +76,19 @@ align-items: center;
 .product .overlay img {
     width: 450px;
 }
+
+@media (max-width:500px) {
+    .product .overlay img {
+        width: 350px;
+    }
+}
+
+@media (max-width:388px) 
+{
+    .product .overlay img {
+        width:300px;
+    }
+}
 .product .overlay .cover .close {
     position: absolute;
     top: -15px;

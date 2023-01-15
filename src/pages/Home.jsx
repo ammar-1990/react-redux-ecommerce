@@ -7,7 +7,12 @@ import Product from '../components/Product'
 import { useState } from 'react'
 import {banner} from "../assets/data/data"
 import { topProducts } from '../assets/data/data'
-
+import { price } from '../assets/data/data'
+import Price from '../components/Price'
+import { customer } from '../assets/data/data'
+import Testimonial from '../components/Testimonial'
+import { blog } from '../assets/data/data'
+import Blog from '../components/Blog'
 
 const Home = () => {
   const [value ,setValue] = useState('')
@@ -23,7 +28,7 @@ const categorySet = (cat)=> {
   }
 
 }
-console.log(categories)
+
   const onSearch = ()=> {
     !value ? setSearch([])
     :setSearch(products.filter((product)=>product.title.toLowerCase().includes(value)))
@@ -89,12 +94,43 @@ console.log(categories)
             <p>meet our newbies! the latest templates uploaded to the market place</p>
             </div>
           <div className="right">
-            {categories.map((cat)=>(<button onClick={()=>categorySet(cat)}>{cat}</button>))}
+            {categories.map((cat,i)=>(<button key={i} onClick={()=>categorySet(cat)}>{cat}</button>))}
           </div>
         </div>
           <div className="container">
             {data.map((el)=><Product el={el} key={el.id} />)}
           </div>
+      </div>
+
+
+
+
+      <div className="prices">
+<h1>choose the planes</h1>
+<p>meet our newbies ! the latest templates uploaded to the market place</p>
+<div className="container">
+  {price.map((el)=>(<Price key={el.id} price={el}/>))}
+</div>
+      </div>
+
+
+      <div className="testimonials">
+        <h1>choose the planes</h1>
+        <p>meet our newbies ! the latest templates uploaded to the market place</p>
+
+
+        <div className="container">
+{customer.map((el)=><Testimonial key={el.id}  data={el}/>)}
+        </div>
+      </div>
+
+      <div className="blogs">
+        <h1>latests blog posts</h1>
+        <p>latest marketplace news, success stories and tutorials </p>
+
+        <div className="container">
+          {blog.map((el)=><Blog data={el} key={el.id} />)}
+        </div>
       </div>
     </div>
   )

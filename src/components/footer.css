@@ -1,0 +1,27 @@
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 8, 8);
+    color: white;
+}
+
+.footer p:first-of-type {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.footer p:nth-of-type(2){
+font-size: 0.8rem;
+text-align: center;
+text-transform: capitalize;
+}
+
+.footer p:nth-of-type(2) span {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
