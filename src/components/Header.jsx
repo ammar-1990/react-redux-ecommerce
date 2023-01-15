@@ -9,14 +9,23 @@ import {BsCart} from 'react-icons/bs'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import { useState } from 'react'
 import {TfiClose} from 'react-icons/tfi'
+import { useSelector } from 'react-redux'
+import CartView from '../features/cart/CartView'
+
+
 
 
 const Header = () => {
 
+
+    const cart =useSelector(state=>state.cart.cart)
     const [open ,setOpen]=useState(false)
+    const [openCart,setOpenCart]=useState(false)
   return (
     <header>
+        
         <nav>
+       {openCart&& <CartView />} 
           {!open&&  <div className="hamburger" onClick={()=>setOpen(val=>!val)}>
                 <RxHamburgerMenu/>
             </div >}
@@ -39,7 +48,7 @@ const Header = () => {
                 <span><AiOutlineHeart className='icon'/></span>
                 <span><AiOutlineUser className='icon'/></span>
 
-                <button className='cart'> <BsCart/> My Cart (0) </button>
+                <button onClick={()=>setOpenCart(val=>!val)} className='cart'> <BsCart/> My Cart ({cart.reduce((init,el)=>{return(init + el.qty)},0)}) </button>
             </div>
         </nav>
     </header>

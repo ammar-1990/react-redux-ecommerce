@@ -1,14 +1,19 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+       z-index: 3;
+}
 nav {
     display: flex;
     padding: 1rem 1rem;
     align-items: center;
     background-color: rgba(238, 238, 238, 0.854);
     box-shadow: 0 0.5px 2px black;
-    position: fixed;
-    top:0;
-    left: 0;
+ position: relative;
     width: 100%;
-    z-index: 3;
+ 
     backdrop-filter: blur(5px);
 }
 
@@ -34,7 +39,7 @@ nav .close {
     nav .hamburger {
         display: block;
     }
-    nav .left img {
+    nav > .left img {
         margin-left: 90px;
     }
 }
@@ -80,17 +85,17 @@ nav .right {
 }
 
 @media (max-width:606px) {
-    nav .right {
+    nav > .right {
         margin: 0;
     }
 }
 
-nav .right span {
+nav > .right span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav .right .input {
+nav >.right .input {
     display: flex;
     align-items: center;
     padding: 0.5rem;
@@ -152,7 +157,7 @@ nav .right .cart {
 }
 
 @media (max-width:606px) {
-    nav .center {
+    nav > .center {
 position: absolute;
 left: 0;
 top: 100%;
@@ -179,12 +184,12 @@ display: none;
 }
 
 @media (max-width:400px){
-   nav .left img {
+   nav >.left img {
         width:75px;
         margin-left: 50px;
     }
 
-    nav .right .cart {
+    nav > .right .cart {
         font-size: 0.6rem;
     }
 } 
