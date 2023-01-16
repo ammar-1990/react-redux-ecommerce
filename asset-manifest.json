@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-redux-ecommerce/static/css/main.5cdb14b9.css",
+    "main.js": "/react-redux-ecommerce/static/js/main.65f4ec88.js",
+    "static/media/cart.png": "/react-redux-ecommerce/static/media/cart.427f0fe88453c51d151d.png",
+    "static/media/logo.svg": "/react-redux-ecommerce/static/media/logo.9b0b58f362a0cbe507915370c759b3d6.svg",
+    "index.html": "/react-redux-ecommerce/index.html",
+    "main.5cdb14b9.css.map": "/react-redux-ecommerce/static/css/main.5cdb14b9.css.map",
+    "main.65f4ec88.js.map": "/react-redux-ecommerce/static/js/main.65f4ec88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cdb14b9.css",
+    "static/js/main.65f4ec88.js"
+  ]
+}
