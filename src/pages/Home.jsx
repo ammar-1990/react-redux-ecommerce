@@ -4,7 +4,7 @@ import {hero} from '../assets/data/data'
 import {products} from '../assets/data/data'
 import Cards from '../components/Cards'
 import Product from '../components/Product'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import {banner} from "../assets/data/data"
 import { topProducts } from '../assets/data/data'
 import { price } from '../assets/data/data'
@@ -13,8 +13,10 @@ import { customer } from '../assets/data/data'
 import Testimonial from '../components/Testimonial'
 import { blog } from '../assets/data/data'
 import Blog from '../components/Blog'
+import { useSelector } from 'react-redux'
 
 const Home = () => {
+  const cart =useSelector(state=>state.cart.cart)
   const [value ,setValue] = useState('')
   const [search,setSearch]=useState([])
   const [data,setData]=useState(topProducts)
@@ -34,6 +36,10 @@ const categorySet = (cat)=> {
     :setSearch(products.filter((product)=>product.title.toLowerCase().includes(value)))
     console.log(search)
   }
+
+
+useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart))},[cart])
+useEffect(()=>{window.scrollTo(0,0)},[])
   return (
     <div className='home'>
       <h1>over <span>6.500</span> curated design <br />

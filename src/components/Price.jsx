@@ -14,7 +14,7 @@ const Price = ({price}) => {
             <div className="button"><button>get started</button></div>
             <ul>
                 {price.list.map((el)=>(
-                    <li ><span className="icon">{el.icon}</span>
+                    <li key={el.id}><span className="icon">{el.icon}</span>
                     <span className="title">{el.para}</span>
                     </li>
                 ))}

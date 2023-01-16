@@ -11,7 +11,8 @@ import { useState } from 'react'
 import {TfiClose} from 'react-icons/tfi'
 import { useSelector } from 'react-redux'
 import CartView from '../features/cart/CartView'
-
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 
 
@@ -21,6 +22,9 @@ const Header = () => {
     const cart =useSelector(state=>state.cart.cart)
     const [open ,setOpen]=useState(false)
     const [openCart,setOpenCart]=useState(false)
+const location=useLocation()
+useEffect(()=> {setOpenCart(false)},[location])
+  
   return (
     <header>
         

@@ -2,14 +2,17 @@ import './cartView.css'
 import {FaRegTrashAlt} from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { DELETE } from './cartSlice'
+import { DELETE ,REMOVE_ALL} from './cartSlice'
 import cartImg from '../../assets/images/cart.png'
+import { Link } from 'react-router-dom'
+
 
 
 const CartView = () => {
 
     const cart =useSelector(state=>state.cart.cart)
     const dispatch=useDispatch()
+
   return (
     <div className='the_cart'>
         {cart.length===0? (<div className='no_cart'>
@@ -23,7 +26,7 @@ const CartView = () => {
     <div className="container">
     {cart.map(el=>(<div key={el.id} className='cart_el'>
         <div className="content">
-        <div className='left'><img src={el.cover} alt="" /></div>
+        <div className='left'><Link to={`/cart/${el.id}`}><img src={el.cover} alt="" /></Link></div>
         <div className="center">
              <span>{el.title}</span>
             <span>Price : $ {el.price}</span>
@@ -35,9 +38,15 @@ const CartView = () => {
         </div>
       
          </div> ))}</div>
+         <div className="end">
          <div className="total">
             total : ${cart.reduce((init,el)=>{
-                return (init+ el.price*el.qty)},0)}</div></>) }
+                return (init+ el.price*el.qty)},0)}</div>
+                <div className="remove">
+                  <button onClick={()=>dispatch(REMOVE_ALL())}>Remove All</button>
+                </div>
+         </div>
+        </>) }
       
     </div>
   )

@@ -1,0 +1,131 @@
+.the_details {
+   min-height: calc(100vh - 180px);
+   margin-top: 60px;
+   padding: 20px;
+   background-color: #eee;
+}
+
+.the_details_content {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.the_details_content .left img {
+    width: 500px;
+}
+
+.the_details_content .right {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   padding: 15px;
+}
+
+.the_details_content .right .stars{
+    color: gold;
+}
+
+
+.the_details_content .right .stars span {
+    color: gray;
+}
+
+.the_details_content .right .the_price  div {
+    margin-bottom: 5px;
+}
+
+.the_details_content .right .the_price :first-child ,.the_details_content .right .the_price :nth-child(2){
+font-weight: bold;
+}
+
+.the_details_content .right .the_price :nth-child(3) {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.the_details_content .right .control {
+    display: flex;
+    gap: 50px;
+}
+
+.the_details_content .right .control button {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 0.7rem;
+   border: none;
+}
+
+.the_details_content .right .the_amount {
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    align-self: flex-start;
+    align-items: center;
+
+}
+
+.the_details_content .right .the_amount span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.the_details_content .right .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.the_details_content .right .desc h3 {
+    text-transform: uppercase;
+}
+
+.the_details_content .right .desc p {
+    color: gray;
+}
+
+.the_details_content .right .product_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.the_details_content .right .product_detail h3 {
+    text-transform: uppercase;
+}
+
+.the_details_content .right .product_detail .all {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: gray;
+}
+
+@media (max-width:950px) {
+    .the_details_content {
+        flex-direction: column;
+    }
+
+    .the_details_content .right {
+        gap: 20px;
+    }
+}
+
+@media (max-width:633px) {
+    .the_details_content .right > h1 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width:530px)
+{
+    .the_details_content .left img {
+        width: 100%;
+    }
+}

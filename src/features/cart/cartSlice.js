@@ -35,9 +35,12 @@ DELETE:(state,action) => {
     
        el.id !== action.payload.id
     )
+},
+REMOVE_ALL:(state)=>{
+    state.cart=[]
 }
     }
 })
 
 export default cartSlice.reducer
-export const {ADD,REMOVE,DELETE}=cartSlice.actions
+export const {ADD,REMOVE,DELETE,REMOVE_ALL}=cartSlice.actions
