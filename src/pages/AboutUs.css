@@ -1,0 +1,33 @@
+.about-us {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-inline: 15px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+min-height: 100vh;
+   align-items: center;
+}
+
+.about-us >h1 {
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.about-us > p {
+    text-transform: capitalize;
+}
+.about-us >h1 ,.about-us > p {
+    text-align: center;
+}
+
+
+.about-us .container {
+    margin:50px 0 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px ,1fr));
+    gap: 20px;
+    width: 100%;
+    row-gap: 40px;
+}

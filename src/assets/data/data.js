@@ -26,31 +26,31 @@ export const navlist = [
 export const hero = [
   {
     id: 1,
-    cover: "../images/hero/cate-h11_1.png",
+    cover: require("../images/hero/cate-h11_1.png"),
     name: "Web Themes",
     items: "5",
   },
   {
     id: 2,
-    cover: "../images/hero/cate-h11_2.png",
+    cover: require("../images/hero/cate-h11_2.png"),
     name: "UI Design",
     items: "12",
   },
   {
     id: 3,
-    cover: "../images/hero/cate-h11_3.png",
+    cover: require("../images/hero/cate-h11_3.png"),
     name: "3D Models",
     items: "12",
   },
   {
     id: 4,
-    cover: "../images/hero/cate-h11_5.png",
+    cover: require("../images/hero/cate-h11_5.png"),
     name: "Image Stock",
     items: "15",
   },
   {
     id: 5,
-    cover: "../images/hero/cate-h11.png",
+    cover: require("../images/hero/cate-h11.png"),
     name: "Mockup Design",
     items: "7",
   },
@@ -58,7 +58,7 @@ export const hero = [
 export const products = [
   {
     id: 1,
-    cover: "../images/product/1-1-1.jpg",
+    cover:require("../images/product/1-1-1.jpg") ,
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 30.0,
@@ -67,7 +67,7 @@ export const products = [
   },
   {
     id: 2,
-    cover: "../images/product/2-1-1.jpg",
+    cover: require("../images/product/2-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 10.0,
@@ -76,7 +76,7 @@ export const products = [
   },
   {
     id: 3,
-    cover: "../images/product/3-1-1.jpg",
+    cover: require("../images/product/3-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 20.0,
@@ -85,7 +85,7 @@ export const products = [
   },
   {
     id: 4,
-    cover: "../images/product/4-3.jpg",
+    cover: require("../images/product/4-3.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: 40.0,
@@ -94,7 +94,7 @@ export const products = [
   },
   {
     id: 5,
-    cover: "../images/product/5-1-1.jpg",
+    cover: require("../images/product/5-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "50.00",
@@ -103,7 +103,7 @@ export const products = [
   },
   {
     id: 6,
-    cover: "../images/product/6-3.jpg",
+    cover: require("../images/product/6-3.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -112,7 +112,7 @@ export const products = [
   },
   {
     id: 7,
-    cover: "../images/product/7-1-1.jpg",
+    cover: require("../images/product/7-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -121,7 +121,7 @@ export const products = [
   },
   {
     id: 8,
-    cover: "../images/product/8-1.jpg",
+    cover: require("../images/product/8-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -135,20 +135,20 @@ export const banner = [
     title1: "Simple IPhone ",
     title2: "Mockups Design PSD, Ai, EPS",
     desc: "Sale 30% Off For Members",
-    cover: "../images/banner/b2.png",
+    cover: require("../images/banner/b2.png"),
   },
   {
     id: 2,
     title1: "Mockup PSD",
     title2: "50+ Ui Screen Mockups",
     desc: "Sale 30% Off For Members",
-    cover: "../images/banner/b1.png",
+    cover: require("../images/banner/b1.png"),
   },
 ]
 export const topProducts = [
   {
     id: 20,
-    cover: "../images/product/7-1-1.jpg",
+    cover: require("../images/product/7-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -157,7 +157,7 @@ export const topProducts = [
   },
   {
     id: 21,
-    cover: "../images/product/8-1.jpg",
+    cover: require("../images/product/8-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -166,7 +166,7 @@ export const topProducts = [
   },
   {
     id: 22,
-    cover: "../images/product/6-3.jpg",
+    cover: require("../images/product/6-3.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -176,7 +176,7 @@ export const topProducts = [
 
   {
     id: 23,
-    cover: "../images/product/5-1-1.jpg",
+    cover: require("../images/product/5-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -185,7 +185,7 @@ export const topProducts = [
   },
   {
     id: 24,
-    cover: "../images/product/4-3.jpg",
+    cover: require("../images/product/4-3.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -194,7 +194,7 @@ export const topProducts = [
   },
   {
     id: 25,
-    cover: "../images/product/3-1-1.jpg",
+    cover: require("../images/product/3-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -203,7 +203,7 @@ export const topProducts = [
   },
   {
     id: 26,
-    cover: "../images/product/1-1-1.jpg",
+    cover: require("../images/product/1-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -212,7 +212,7 @@ export const topProducts = [
   },
   {
     id: 27,
-    cover: "../images/product/2-1-1.jpg",
+    cover: require("../images/product/2-1-1.jpg"),
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
     price: "30.00",
@@ -344,41 +344,67 @@ export const blog = [
     date: "October 27, 2021",
     title: "Transition Your Favorite Looks into  Fall France 2022",
     category: "image",
-    cover: "../images/blog/b1.jpg",
+    cover: require("../images/blog/b1.jpg"),
   },
   {
     id: 2,
     date: "October 27, 2021",
     title: "Meeting Breathtaking Beauty for  Everyday Life",
     category: "shopping",
-    cover: "../images/blog/b2.jpg",
+    cover: require("../images/blog/b2.jpg"),
   },
   {
     id: 3,
     date: "October 27, 2021",
     title: "Perfect Quality Reasonable Price for Your",
     category: "travle",
-    cover: "../images/blog/b3.jpg",
+    cover: require("../images/blog/b3.jpg"),
   },
   {
     id: 4,
     date: "October 27, 2021",
     title: "Transition Your Favorite Looks into  Fall France 2022",
     category: "music",
-    cover: "../images/blog/b4.jpg",
+    cover: require("../images/blog/b4.jpg"),
   },
   {
     id: 5,
     date: "October 27, 2021",
     title: "Meeting Breathtaking Beauty for  Everyday Life",
     category: "music",
-    cover: "../images/blog/b5.jpg",
+    cover: require("../images/blog/b5.jpg"),
   },
   {
     id: 6,
     date: "October 27, 2021",
     title: "Perfect Quality Reasonable Price for Your",
     category: "lifestyle",
-    cover: "../images/blog/b6.jpg",
+    cover: require("../images/blog/b6.jpg"),
+  },
+]
+
+
+export const form = [
+  {
+    id:1,
+    name:'firstName',
+    type:'text',
+    placeholder:'ENTER YOUR FIRST NAME...',
+    message:'please enter your first name'
+   
+  },
+  {
+    id:2,
+    name:'secondName',
+    type:'text',
+    placeholder:'ENTER YOUR SECOND NAME...',
+    message:'please enter your last name'
+  },
+  {
+    id:3,
+    name:'email',
+    type:'email',
+    placeholder:'ENTER YOUR E-MAIL...',
+    message:'please enter your e-mail'
   },
 ]

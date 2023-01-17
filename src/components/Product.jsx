@@ -6,6 +6,8 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 import { useState } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { ADD } from '../features/cart/cartSlice'
+
+
 const Product = ({el}) => {
     const [open,setOpen]=useState(false)
 

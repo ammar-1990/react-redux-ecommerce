@@ -39,7 +39,7 @@ const categorySet = (cat)=> {
 
 
 useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart))},[cart])
-useEffect(()=>{window.scrollTo(0,0)},[])
+
   return (
     <div className='home'>
       <h1>over <span>6.500</span> curated design <br />

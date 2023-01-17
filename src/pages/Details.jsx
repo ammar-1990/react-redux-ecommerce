@@ -6,7 +6,7 @@ import {AiOutlinePlus} from 'react-icons/ai'
 import {AiOutlineMinus} from 'react-icons/ai'
 import { ADD , REMOVE,DELETE } from '../features/cart/cartSlice'
 import { useEffect } from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const Details = () => {
@@ -17,8 +17,9 @@ const Details = () => {
     const cart =useSelector(state=>state.cart.cart)
 
     const item=cart.find((el)=>el.id===+id)
-    useEffect(()=>{window.scrollTo(0,0)},[])
+const navigat=useNavigate()
     useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart));},[cart])
+    useEffect(()=>{ !item && setTimeout(()=>{navigat('/')},1000) },[cart])
     
   return (
 
@@ -78,7 +79,7 @@ item?
         </div>
     </div>
 </div>
-  : <Navigate to={'/'}/> }
+  : <div className='deleted'> ITEM DOESN,T EXIST <br/> REDIRECTING....</div>}
     </div>
   )
 }

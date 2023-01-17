@@ -106,6 +106,14 @@ font-weight: bold;
     color: gray;
 }
 
+
+.the_details .deleted{
+position: fixed;
+top:30%;
+left: 50%;
+transform: translateX(-50%);
+}
+
 @media (max-width:950px) {
     .the_details_content {
         flex-direction: column;

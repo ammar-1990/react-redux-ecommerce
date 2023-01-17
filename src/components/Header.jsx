@@ -23,7 +23,7 @@ const Header = () => {
     const [open ,setOpen]=useState(false)
     const [openCart,setOpenCart]=useState(false)
 const location=useLocation()
-useEffect(()=> {setOpenCart(false)},[location])
+useEffect(()=> {setOpenCart(false);setOpen(false)},[location])
   
   return (
     <header>

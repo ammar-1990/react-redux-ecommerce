@@ -1,0 +1,34 @@
+.shop {
+    min-height: calc(100vh - 90px);
+    margin-top: 60px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #eee;
+    padding-inline: 15px;
+}
+
+.shop> h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.shop > h1:nth-of-type(2) {
+    margin-top: 100px;
+
+}
+
+.shop> p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.shop .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
