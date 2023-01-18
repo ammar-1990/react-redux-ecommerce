@@ -1,11 +1,12 @@
 import './Product.css'
 import {BsSearch} from 'react-icons/bs'
-import {AiOutlineHeart} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import {CiShoppingBasket} from 'react-icons/ci'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import { useState } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
-import { ADD } from '../features/cart/cartSlice'
+import { ADD ,DELETE} from '../features/cart/cartSlice'
+import {AiOutlineEye} from 'react-icons/ai'
 
 
 const Product = ({el}) => {
@@ -13,15 +14,20 @@ const Product = ({el}) => {
 
 
     const cart =useSelector(state=>state.cart.cart)
+    const item =cart.find((item)=> item.id===el.id)
     const dispatch = useDispatch()
+    const handleClick =()=>{
+console.log(item,el.id)
+      !item ? dispatch(ADD(el)) : dispatch(DELETE(el))
+    }
   return (
     <div className='product'>
         <div className="img"><img src={el.cover} alt="" />
         
         <div className="buttons">
             <button onClick={()=>setOpen(true)} ><BsSearch /></button>
-            <button><AiOutlineHeart/></button>
-            <button onClick={()=>dispatch(ADD(el))}><CiShoppingBasket/></button>
+            <Link to={`/products/${el.id}`}><button className='see'><AiOutlineEye/></button></Link>
+            <button style={{backgroundColor:item &&'orangered',color :item && 'white'}} onClick={handleClick}><CiShoppingBasket/></button>
             </div></div>
 
         <div className="content">

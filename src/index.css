@@ -11,4 +11,13 @@ html {
   font-family: 'Roboto', sans-serif;;
 }
 
+body {
+  background-color: #eee;
+
+}
+.App {
+  width: 100vw;
+  overflow: hidden;
+}
+
 

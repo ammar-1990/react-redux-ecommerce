@@ -2,9 +2,11 @@ import './Shop.css'
 import Product from '../components/Product'
 import {products} from '../assets/data/data'
 import { topProducts } from '../assets/data/data'
+import AnimPage from '../components/AnimPage'
 
 const Shop = () => {
   return (
+    <AnimPage>
     <div className='shop'>
 <h1>trendings products</h1>
   <p>check the hottest designs of the week . these rising stars are worth your attention</p>
@@ -24,6 +26,7 @@ const Shop = () => {
             {topProducts.map((el)=><Product el={el} key={el.id} />)}
           </div>
     </div>
+    </AnimPage>
   )
 }
 

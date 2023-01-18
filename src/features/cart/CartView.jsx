@@ -2,9 +2,11 @@ import './cartView.css'
 import {FaRegTrashAlt} from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { DELETE ,REMOVE_ALL} from './cartSlice'
+import {ADD,REMOVE, DELETE ,REMOVE_ALL} from './cartSlice'
 import cartImg from '../../assets/images/cart.png'
 import { Link } from 'react-router-dom'
+import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlineMinus} from 'react-icons/ai'
 
 
 
@@ -30,7 +32,13 @@ const CartView = () => {
         <div className="center">
              <span>{el.title}</span>
             <span>Price : $ {el.price}</span>
-            <span>Quantity : {el.qty}</span>
+            <span className='the_qty'>Quantity :   
+              <span className='qty'>
+                <span><AiOutlineMinus onClick={()=>dispatch(REMOVE(el))}/></span>
+                {el.qty} 
+                <span><AiOutlinePlus  onClick={()=>dispatch(ADD(el))}/></span>
+                 </span> 
+                  </span>
             </div>
         <div className='right' onClick={()=>dispatch(DELETE(el))}>
            <FaRegTrashAlt />

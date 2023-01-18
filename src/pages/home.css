@@ -68,6 +68,7 @@
     margin-right: 10px;
     border-right: 1px solid #eee;
     padding-right: 10px;
+    font-size: 0.7rem;
 }
 .home .search input {
     flex: 1;
@@ -90,9 +91,13 @@
     margin-top: 50px;
 }
 
-.home .products h3 {
+.home .products > h3 {
     text-transform: capitalize;
     margin-bottom: 5px;
+}
+
+.home .products > p {
+    text-align: center;
 }
 
 .home .products .container {

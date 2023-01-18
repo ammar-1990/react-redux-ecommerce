@@ -62,6 +62,24 @@ justify-content: space-between;
 
 }
 
+.the_cart .cart_el .content .center .the_qty {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.the_cart .cart_el .content .center .qty {
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    padding: 4px;
+    border: 1px solid lightgray;
+}
+
+.the_cart .cart_el .content .center .qty span {
+    cursor: pointer;
+}
+
 .the_cart .cart_el .content .center span {
     font-size: 0.6rem;
     color: gray;

@@ -7,19 +7,29 @@ import {AiOutlineMinus} from 'react-icons/ai'
 import { ADD , REMOVE,DELETE } from '../features/cart/cartSlice'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { products ,topProducts } from '../assets/data/data'
+import { Link } from 'react-router-dom'
 
 
-const Details = () => {
+
+const Details = ({see}) => {
 
     const {id} =useParams()
     const dispatch = useDispatch()
 
     const cart =useSelector(state=>state.cart.cart)
-
-    const item=cart.find((el)=>el.id===+id)
+    let item
+   !see ? item=cart.find((el)=>el.id===+id) : item= products.find((el)=>el.id===+id) || topProducts.find((el)=>el.id===+id)
 const navigat=useNavigate()
     useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart));},[cart])
-    useEffect(()=>{ !item && setTimeout(()=>{navigat('/')},1000) },[cart])
+    useEffect(()=>{  !item && setTimeout(()=>{navigat('/')},150) },[cart])
+
+
+
+    const handleClick =(el)=>{
+        dispatch(ADD(el))
+        see=false
+    }
     
   return (
 
@@ -44,12 +54,12 @@ item?
         <div className="the_price">
             <div>PRICE FOR UNIT:  ${item.price}</div>
 
-            <div>TOTAL : ${item.price*item.qty}</div>
+           {!see && <div>TOTAL : ${item.price*item.qty}</div>} 
             <div>{item.author}</div>
         </div>
 
 
-         <div className="control">
+        {!see ? <div className="control">
              <div className="the_amount">
            <span onClick={()=>dispatch(ADD(item))}><AiOutlinePlus/></span> {item.qty} <span><AiOutlineMinus onClick={()=>dispatch(REMOVE(item))}/></span>
 
@@ -57,7 +67,7 @@ item?
             </div>
             <button onClick={()=>dispatch(DELETE(item))}>Remove From Cart</button>
 
-        </div>
+        </div> : <Link to={`/cart/${item.id}`}><button className='to_cart' onClick={()=>handleClick(item)}>ADD TO CART</button></Link>} 
 
 
         <div className="desc">
@@ -81,6 +91,7 @@ item?
 </div>
   : <div className='deleted'> ITEM DOESN,T EXIST <br/> REDIRECTING....</div>}
     </div>
+    
   )
 }
 

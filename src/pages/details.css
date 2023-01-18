@@ -106,6 +106,14 @@ font-weight: bold;
     color: gray;
 }
 
+.the_details_content .right .to_cart {
+    align-self: flex-start;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
 
 .the_details .deleted{
 position: fixed;

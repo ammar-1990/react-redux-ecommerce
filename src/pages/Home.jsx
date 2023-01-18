@@ -14,6 +14,7 @@ import Testimonial from '../components/Testimonial'
 import { blog } from '../assets/data/data'
 import Blog from '../components/Blog'
 import { useSelector } from 'react-redux'
+import AnimPage from '../components/AnimPage'
 
 const Home = () => {
   const cart =useSelector(state=>state.cart.cart)
@@ -41,6 +42,7 @@ const categorySet = (cat)=> {
 useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart))},[cart])
 
   return (
+    <AnimPage>
     <div className='home'>
       <h1>over <span>6.500</span> curated design <br />
       resources , <span>graphics&websites</span> templates</h1>
@@ -139,6 +141,7 @@ useEffect(()=>{localStorage.setItem('cart',JSON.stringify(cart))},[cart])
         </div>
       </div>
     </div>
+    </AnimPage>
   )
 }
 

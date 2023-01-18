@@ -1,9 +1,11 @@
 import './AboutUs.css'
 import { customer } from '../assets/data/data'
 import Testimonial from '../components/Testimonial'
+import AnimPage from '../components/AnimPage'
 
 const AboutUs = () => {
   return (
+    <AnimPage>
     <div className='about-us'>
 
 <h1>choose the planes</h1>
@@ -17,7 +19,7 @@ const AboutUs = () => {
 
     </div>
 
-
+    </AnimPage>
 
 
   )
