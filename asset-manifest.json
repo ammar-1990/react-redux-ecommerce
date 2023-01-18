@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-redux-ecommerce/static/css/main.5dfc19be.css",
-    "main.js": "/react-redux-ecommerce/static/js/main.4eb6b936.js",
+    "main.css": "/react-redux-ecommerce/static/css/main.6ce19253.css",
+    "main.js": "/react-redux-ecommerce/static/js/main.a0d1ec2b.js",
     "static/media/3-1-1.jpg": "/react-redux-ecommerce/static/media/3-1-1.a41c013255af178e263c.jpg",
     "static/media/6-3.jpg": "/react-redux-ecommerce/static/media/6-3.945073ff1f7c773264c6.jpg",
     "static/media/4-3.jpg": "/react-redux-ecommerce/static/media/4-3.9a2e000fb3d3a498b31f.jpg",
@@ -21,11 +21,11 @@
     "static/media/cart.png": "/react-redux-ecommerce/static/media/cart.427f0fe88453c51d151d.png",
     "static/media/logo.svg": "/react-redux-ecommerce/static/media/logo.9b0b58f362a0cbe507915370c759b3d6.svg",
     "index.html": "/react-redux-ecommerce/index.html",
-    "main.5dfc19be.css.map": "/react-redux-ecommerce/static/css/main.5dfc19be.css.map",
-    "main.4eb6b936.js.map": "/react-redux-ecommerce/static/js/main.4eb6b936.js.map"
+    "main.6ce19253.css.map": "/react-redux-ecommerce/static/css/main.6ce19253.css.map",
+    "main.a0d1ec2b.js.map": "/react-redux-ecommerce/static/js/main.a0d1ec2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dfc19be.css",
-    "static/js/main.4eb6b936.js"
+    "static/css/main.6ce19253.css",
+    "static/js/main.a0d1ec2b.js"
   ]
 }
